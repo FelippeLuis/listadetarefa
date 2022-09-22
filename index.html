@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minhas Tarefas</title>
+</head>
+
+<body>
+    <h1>Tarefas</h1>
+    <ul>
+        <li>Estudar HTML</li>
+        <li>Estudar CSS</li>
+        <li>Estudar JS</l>
+    </ul>
+    <input>
+    <button onclick="add()">adicionar</button>
+    <script>
+        function add() {
+
+            const ul = document.querySelector("ul")
+
+            const input = document.querySelector("input")
+
+            const tarefa = input.value
+
+            const li = document.createElement("li")
+
+            li.innerText = tarefa
+            
+            ul.appendChild(li)
+            
+            input.value = ""
+            
+        }
+    </script>
+</body>
+
+</html>
